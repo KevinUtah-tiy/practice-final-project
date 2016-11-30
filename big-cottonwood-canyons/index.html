@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Silver Lake</title>
+   <link rel="stylesheet" href="master.css">
+   <!-- <link rel="stylesheet" href="/css/header.css">
+   <link rel="stylesheet" href="/css/body.css">
+   <link rel="stylesheet" href="/css/footer.css">
+   <link rel="stylesheet" href="/css/anchor.css"> -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
+   <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+  </head>
+
+  <body>
+
+    <header class="header">
+      <h1 class="header">Winter Trails of the Wasatch</h1>
+      <h2>Trails Around Brighton Lodge</h2>
+      <p>
+        Brighton Lakes</br>
+        Silver Lake
+      </p>
+    </header>
+
+    <div id="content">
+        <div id="sidebar">
+            <h1>Sidebar</h1>
+            <p><strong>
+              Know Before You Go:  </strong><br />Check the <a href="https://utahavalanchecenter.org/advisory/salt-lake">avalanche warning site.
+              <img src="/Users/kevinjblack/Desktop/final-project/images/utah-avalanche-logo.png" alt="Avalanche Warning logo">
+            </a>
+
+            </p>
+            <!-- <a href="http://www.accuweather.com/en/us/brighton-ut/84121/weather-forecast/2197584" class="aw-widget-legal"> -->
+<!--
+By accessing and/or using this code snippet, you agree to AccuWeather’s terms and conditions (in English) which can be found at http://www.accuweather.com/en/free-weather-widgets/terms and AccuWeather’s Privacy Statement (in English) which can be found at http://www.accuweather.com/en/privacy.
+-->
+<!-- </a><div id="awcc1480202807256" class="aw-widget-current"  data-locationkey="2197584" data-unit="f" data-language="en-us" data-useip="false" data-uid="awcc1480202807256"></div><script type="text/javascript" src="http://oap.accuweather.com/launch.js"></script> -->
+<a href="http://api.openweathermap.org/data/2.5/weather?lat=40.576084&lon=-111.681688&appid=f52141d316d5fe9ec4f644247441dfa9&units=imperial&mode=html"></a>
+
+            <h3>This is below the weather</h3>
+        </div>
+
+        <!-- Trail information -->
+        <div id="main">
+            <h1>Trail Information</h1>
+            <!-- <h2>Interactive Map from Leaflet.js</h2> -->
+            <p> Do you see a map?
+              <a href="/Users/kevinjblack/Desktop/final-project-practice-maps/google-maps.html">link
+              </a>
+            <div id="mapid"></div>
+
+            <h3>Trail information</h3>
+            <ul style="list-style: none">
+              <li>Trail name:</li>
+              <li>Trailhead lat/lon: 40º 41' 52" (N); 111º 44' 24" (W)</li>
+              <li>Trail length</li>
+              <li>Trail elevation gain</li>
+              <li>photo of personal hike</li>
+            </ul>
+            </div>
+        </div>
+
+
+    <script src="./main.js"></script>
+    <!-- <script src="leaflet.js"</script> -->
+  </body>
+</html>
+
+
+<!--
+<a href="<a href="http://www.accuweather.com/en/us/brighton-ut/84121/weather-forecast/2197584" class="aw-widget-legal">
+    <!--
+    By accessing and/or using this code snippet, you agree to AccuWeather’s terms and conditions (in English) which can be found at http://www.accuweather.com/en/free-weather-widgets/terms and AccuWeather’s Privacy Statement (in English) which can be found at http://www.accuweather.com/en/privacy.
+
+    </a><div id="awcc1480202807256" class="aw-widget-current"  data-locationkey="2197584" data-unit="f" data-language="en-us" data-useip="false" data-uid="awcc1480202807256"></div><script type="text/javascript" src="http://oap.accuweather.com/launch.js"></script>
+-->

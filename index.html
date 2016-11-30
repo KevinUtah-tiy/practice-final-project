@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Practice</title>
+   <link rel="stylesheet" href="little-cottonwood-canyons/white-red-maybird-lakes/css/master.css">
+   <link rel="stylesheet" href="little-cottonwood-canyons/white-red-maybird-lakes/css/header.css">
+   <link rel="stylesheet" href="little-cottonwood-canyons/white-red-maybird-lakes/css/body.css">
+   <link rel="stylesheet" href="little-cottonwood-canyons/white-red-maybird-lakes/css/footer.css">
+   <link rel="stylesheet" href="little-cottonwood-canyons/white-red-maybird-lakes/css/anchor.css">
+  </head>
+
+  <body>
+
+    <header class="header">
+      <h1 class="header">Winter Trails of the Wasatch</h1>
+      <h2 class="header">White Pine Lake </br>
+      Red Pine Lake </br>
+    Maybird Lake</br></h2>
+    </header>
+
+    <div id="content">
+        <div id="sidebar">
+          <h1>Weather</h1>
+          <p><strong>
+            Know Before You Go:  </strong><br />Check the <a href="https://utahavalanchecenter.org/advisory/salt-lake">avalanche warning site.</a>
+            <div class="box">
+              <iframe src="https://utahavalanchecenter.org/advisory/salt-lake" width="90%", height="25%">
+              </iframe>
+            </div>
+          </p>
+            <a href="http://www.accuweather.com/en/us/salt-lake-city-ut/84101/weather-forecast/331216" class="aw-widget-legal">
+              <!--
+              By accessing and/or using this code snippet, you agree to AccuWeather’s terms and conditions (in English) which can be found at http://www.accuweather.com/en/free-weather-widgets/terms and AccuWeather’s Privacy Statement (in English) which can be found at http://www.accuweather.com/en/privacy.
+              -->
+              </a><div id="awcc1480198178836" class="aw-widget-current"  data-locationkey="331216" data-unit="f" data-language="en-us" data-useip="false" data-uid="awcc1480198178836"></div><script type="text/javascript" src="http://oap.accuweather.com/launch.js"></script>
+            <h3></h3>
+        </div>
+        <div id="main">
+            <h1>Main</h1>
+              <div id="map"></div>
+
+              <script>
+                    function initMap() {
+                      // Create a map object and specify the DOM element for display.
+                      var map = new google.maps.Map(document.getElementById('map'), {
+                        center: {lat: -34.397, lng: 150.644},
+                        scrollwheel: false,
+                        zoom: 8
+                      });
+                    }
+
+                  </script>
+                  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2TR7UlUJwUuwurFpAahSGWIy2D2x6364&callback=initMap"
+                  async defer></script>
+
+            <h2>Interactive Map</h2>
+            <h3>Trail information</h3>
+            <ul style="list-style: none">
+              <li>Trail name: Maybird Lakes, which includes White Pine Lake and Red Pine Lake trails</li>
+              <li>Trailhead lat/lon: 40.576084ºN, 111.681688ºW</li>
+              <li>Trail length</li>
+              <li>Trail elevation gain</li>
+              <li>photo of personal hike</li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <script src="./main.js"></script>
+  </body>
+</html>

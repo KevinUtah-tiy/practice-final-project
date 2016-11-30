@@ -1,0 +1,14 @@
+header
+{
+  background-color: lightblue;
+  /*font-size: 97%;*/
+  text-align: center;
+  /*font-stretch: expanded;*/
+  font-variant: small-caps;
+  /*max-width: 95%;*/
+  /*white-space: nowrap;*/
+  border-radius: 1rem;
+  margin: 2%;
+  min-height: 20%;
+  max-height: 20%;
+}

@@ -1,0 +1,60 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500);
+
+@include responsive-font(5vw, 35px, 150px, 50px);
+
+@-ms-viewport{
+  width: device-width;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Ubuntu, sans-serif;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  background-image: url('../images/yosemite.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  padding: 1em;
+}
+
+h1 {
+  display: block;
+  padding: .5em;
+  margin-bottom: 2em;
+  color: white;
+  text-shadow: black 1px 1px;
+}
+
+.searchBox {
+  position: relative;
+  top: -1em;
+}
+
+.search {
+  display: inline;
+  font-size: 1.25em;
+  padding: .25em;
+}
+
+.button {
+  background-color: rgb(150, 150, 150);
+}
+
+main {
+  width: 100%;
+  height: auto;
+}
+
+#map {
+  display: block;
+  width: 70%;
+  margin: 3em 0 0 10%;
+  margin-left: 15%;
+  height: 37em;
+  background-color: lightgrey;
+}
