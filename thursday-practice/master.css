@@ -25,6 +25,11 @@ h1
   text-align: center;
 }
 
+h2, h3
+{
+  margin-left: 15px;
+}
+
 body
 {
   min-height: 75%;
@@ -54,5 +59,6 @@ body
 
 #mapid
 {
-  height: 480px;
+  height: 400px;
+  width: 50%;
 }
